@@ -10,4 +10,4 @@ CREATE STREAM monitoramento_guarapiranga (
 SELECT NivelAgua, Botao
 FROM monitoramento_guarapiranga
 WHERE NivelAgua > 850 OR ( Botao =  true AND NivelAgua < 2000)
-EMIT CHANGES
+EMIT CHANGES;
