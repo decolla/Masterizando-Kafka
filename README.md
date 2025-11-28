@@ -14,7 +14,7 @@ O sistema opera em modelo **Full-Duplex**, onde a aplicação atua simultaneamen
 3.  **Monitoramento (Consumer):** A aplicação consome tanto os dados brutos quanto os alertas críticos gerados pelo ksqlDB.
 4.  **Automação (Control Plane):** Um módulo dedicado gerencia o ciclo de vida das queries no ksqlDB via **REST API**, permitindo criar e destruir regras de negócio dinamicamente.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Linguagem:** C# (.NET 8.0)
 * **Message Broker:** Apache Kafka (Confluent Platform)
@@ -57,14 +57,14 @@ Controlador: Digite as opções no menu para interagir com a API do ksqlDB:
 
 2 - Apagar Filtro: Remove a query e o fluxo de dados processado.
 
-🧠 Destaques de Implementação
+Destaques de Implementação
 Multithreading: Uso de Task.Run para gerenciar I/O não-bloqueante, permitindo que a ingestão de dados e o processamento de alertas ocorram paralelamente sem latência.
 
 Infrastructure as Code Dinâmico: A aplicação não depende de scripts SQL manuais; ela provisiona a infraestrutura de stream processing via chamadas HTTP POST para o ksqlDB.
 
 Tratamento de Erros: Implementação robusta de try/catch para conexões de rede e validação de respostas HTTP 400 (Bad Request) para depuração de sintaxe SQL.
 
-📂 Estrutura do Projeto
+Estrutura do Projeto
 /SensorAgua: Código fonte da aplicação C#.
 
 Program.cs: Ponto de entrada e orquestração das Threads.
