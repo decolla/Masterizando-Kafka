@@ -1,6 +1,6 @@
 # Monitoramento em Tempo Real com Apache Kafka, ksqlDB e .NET
 
-Este repositório contém uma Prova de Conceito (PoC) de uma arquitetura **Event-Driven** para monitoramento de sensores hídricos em tempo real. O projeto demonstra a integração completa entre uma aplicação .NET (C#) e o ecossistema Confluent (Kafka + ksqlDB), simulando um cenário de IoT industrial.
+O projeto demonstra a integração completa entre uma aplicação .NET (C#) e o ecossistema Confluent (Kafka + ksqlDB), simulando um cenário de fluxo de dados.
 
 ## Visão Geral da Arquitetura
 
